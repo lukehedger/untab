@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Untab",
+  "version": "1.0",
+  "description": "Unsplash for Firefox tabs",
+  "icons": {
+    "48": "untab.svg",
+    "96": "untab.svg"
+  },
+  "chrome_url_overrides": {
+    "newtab": "untab.html"
+  }
+}

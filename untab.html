@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <style>
+      a {
+        color: #dd4e44;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      svg.feather {
+        margin-right: 8px;
+      }
+
+      #attribution {
+        height: 19px;
+        margin: 16px 0;
+      }
+
+      #description {
+        margin-left: 16px;
+      }
+
+      #location {
+        align-items: center;
+        display: flex;
+      }
+
+      #location_text {
+        font-size: 13px;
+      }
+
+      #logo {
+        flex: none;
+        margin-left: auto;
+        padding-right: 16px;
+        width: 48px;
+      }
+
+      #photographer {
+        background-color: white;
+        bottom: 0;
+        border-top: 2px solid #dd4e44;
+        color: #0b262c;
+        display: flex;
+        height: 80px;
+        position: absolute;
+        width: 100vw;
+      }
+
+      #profile_image_container {
+        background-color: white;
+        border: 2px solid #dd4e44;
+        border-radius: 50%;
+        height: 48px;
+        margin-left: 16px;
+        margin-top: -34px;
+        padding: 8px;
+        width: 48px;
+      }
+
+      #profile_image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+      }
+
+      #untab {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="untab">
+      <div id="photographer">
+        <div id="profile_image_container">
+          <div id="profile_image"></div>
+        </div>
+
+        <div id="description">
+          <p id="attribution">
+            <span>Photo by </span>
+          </p>
+
+          <div id="location">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-map"
+            >
+              <polygon
+                points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"
+              ></polygon>
+              <line x1="8" y1="2" x2="8" y2="18"></line>
+              <line x1="16" y1="6" x2="16" y2="22"></line>
+            </svg>
+          </div>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          x="0px"
+          y="0px"
+          fill="#DD4E44"
+          id="logo"
+        >
+          <g>
+            <path
+              d="M7,31H17v5a1,1,0,0,0,.293.707L22.586,42H20.162L15,40.279V40a4,4,0,0,0-4-4H8a1,1,0,0,0-1,1v1a4,4,0,0,0,4,4h2.837l5.847,1.949A1,1,0,0,0,20,44h4.586L32,51.414V61a1,1,0,0,0,1,1h7a1,1,0,0,0,1-1V48h6a4,4,0,0,0,4-4V43a1,1,0,0,0-1-1H47a4,4,0,0,0-4,4H41V42.147L42.364,37.6l4.8-1.6H50a4,4,0,0,0,4-4V31a1,1,0,0,0-1-1H50a4,4,0,0,0-4,4v.279l-2.933.978.832-2.774,4.869-5.843A1,1,0,0,0,49,26V20h8a5,5,0,1,0-.35-9.985A5.97,5.97,0,0,0,51,6h-.079A8,8,0,0,0,36,10c0,.033,0,.067,0,.1A5,5,0,0,0,37,20h6v3.532l-5.64,4.7a1,1,0,0,0-.3.432L32.535,41.328,23,33.526V31h3a5,5,0,0,0,.941-9.911,7,7,0,0,0-12.768-2.962,5.934,5.934,0,0,0-6.39,2.94A4.608,4.608,0,0,0,7,21,5,5,0,0,0,7,31Zm4,9a2,2,0,0,1-2-2h2a2,2,0,0,1,2,2Zm36,4h2a2,2,0,0,1-2,2H45A2,2,0,0,1,47,44Zm3-12h2a2,2,0,0,1-2,2H48A2,2,0,0,1,50,32ZM34,15a3,3,0,0,1,2.953-3c.039,0,.082.008.109.008a.931.931,0,0,0,.769-.338,1,1,0,0,0,.239-.8,5.992,5.992,0,0,1,11.371-3.38c0,.01.014.018.02.028A6,6,0,0,1,48.286,14.2l1.429,1.4a7.953,7.953,0,0,0,2.044-7.522,3.981,3.981,0,0,1,3.171,3.258,1,1,0,0,0,1.258.8A2.943,2.943,0,0,1,57,12a3,3,0,0,1,0,6H37A3,3,0,0,1,34,15ZM21.367,34.774l10.962,8.969L35,46.414V49h2V46a1,1,0,0,0-.293-.707l-2.552-2.552,4.7-13.148,5.79-4.825A1,1,0,0,0,45,24V20h2v5.638L42.366,31.2,38.553,33.1l.894,1.79,1.93-.965-.63,2.1-.063.021.03.09-1.672,5.572A1,1,0,0,0,39,42V60H34V51a1,1,0,0,0-.293-.707L19,35.586V31h2v3A1,1,0,0,0,21.367,34.774ZM7,23a2.965,2.965,0,0,1,1,.188A1,1,0,0,0,9.27,22.6,4.013,4.013,0,0,1,13,20c.1,0,.2.019.292.028A7.014,7.014,0,0,0,13,22h2a5,5,0,0,1,10,0,1,1,0,0,0,1,1,3,3,0,0,1,0,6H7a3,3,0,0,1,0-6Z"
+            />
+            <rect x="41" y="8" width="2" height="2" />
+            <rect x="44" y="12" width="2" height="2" />
+            <rect x="13" y="25" width="2" height="2" />
+            <rect x="19" y="21" width="2" height="2" />
+            <path
+              d="M6,62H26a4,4,0,0,0,0-8,3.96,3.96,0,0,0-1.744.4,4.96,4.96,0,0,0-2.276-1.99A4.047,4.047,0,0,0,22,52a5,5,0,0,0-9.583-1.984,5.913,5.913,0,0,0-6.065,4A4,4,0,1,0,6,62Zm0-6a1.984,1.984,0,0,1,.719.141,1,1,0,0,0,1.348-.774,3.948,3.948,0,0,1,4.814-3.261,1.008,1.008,0,0,0,.756-.131,1,1,0,0,0,.44-.627A3,3,0,0,1,20,52a5.006,5.006,0,0,0-5,5h2a3,3,0,0,1,3-3,3.033,3.033,0,0,1,2.874,2.2,1,1,0,0,0,1.686.422A1.978,1.978,0,0,1,26,56a2,2,0,0,1,0,4H6a2,2,0,0,1,0-4Z"
+            />
+            <path
+              d="M56,49a3.993,3.993,0,0,0-2.8,1.147A4.927,4.927,0,0,0,52,50a5.009,5.009,0,0,0-4.9,4,4,4,0,1,0-.1,8H58a3.991,3.991,0,0,0,1.738-7.588A3.938,3.938,0,0,0,60,53,4,4,0,0,0,56,49Zm4,9a2,2,0,0,1-2,2H47a2,2,0,0,1,0-4,1.972,1.972,0,0,1,.678.129,1,1,0,0,0,1.34-.985c0-.032-.014-.113-.018-.144a3,3,0,0,1,3-3c.045,0,.088.011.133.013A3.98,3.98,0,0,0,52,53v1h2V53a2,2,0,0,1,.346-1.123l.006-.006a1.995,1.995,0,1,1,3.115,2.474,1,1,0,0,0,.669,1.673A2,2,0,0,1,60,58Z"
+            />
+            <rect x="10" y="54" width="2" height="2" />
+            <rect x="19" y="56" width="2" height="2" />
+            <rect x="52" y="56" width="2" height="2" />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <script src="/untab.js" type="module"></script>
+  </body>
+</html>
