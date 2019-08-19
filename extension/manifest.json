@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Untab",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Unsplash for Firefox tabs",
   "icons": {
     "48": "untab.svg",

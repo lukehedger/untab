@@ -1,0 +1,13 @@
+{
+  "name": "untab",
+  "version": "1.0.0",
+  "description": "Unsplash for Firefox tabs",
+  "private": true,
+  "scripts": {
+    "dev": "sirv start --dev"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "sirv-cli": "^0.4.4"
+  }
+}
