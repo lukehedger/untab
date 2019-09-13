@@ -16,19 +16,17 @@
     elUntab.style = `background-image: url(${json.urls.regular})`;
 
     const elProfileImage = document.getElementById("profile_image");
-    elProfileImage.style = `background-image: url(${
-      json.user.profile_image.medium
-    })`;
+    elProfileImage.style = `background-image: url(${json.user.profile_image.medium})`;
 
     const userLink = document.createElement("a");
-    userLink.href = json.user.links.html;
+    userLink.href = `${json.user.links.html}?utm_source=untab&utm_medium=referral`;
     userLink.textContent = json.user.name;
 
     const onSpan = document.createElement("span");
     onSpan.textContent = " on ";
 
     const photoLink = document.createElement("a");
-    photoLink.href = json.links.html;
+    photoLink.href = `${json.links.html}?utm_source=untab&utm_medium=referral`;
     photoLink.textContent = "Unsplash";
 
     const elAttribution = document.getElementById("attribution");
@@ -37,7 +35,7 @@
     elAttribution.appendChild(photoLink);
 
     const location = document.createElement("p");
-    location.id = "location_text"
+    location.id = "location_text";
     location.textContent = json.location.title;
 
     const elLocation = document.getElementById("location");
